@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Hi my love,</strong>
+                        <p>You’re everything I’ve ever wanted, and what we have feels truly special. I care about you more than words can say. I love you so much my love </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector(".envelope-wrapper");
+        const heart = document.querySelector(".heart");
+        heart.addEventListener("click", ()=>{
+            envelope.classList.toggle("flap")
+        })
+    </script>
+</body>
+</html>
